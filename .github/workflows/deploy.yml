@@ -36,8 +36,11 @@ jobs:
           EXPO_PUBLIC_SUPABASE_URL: ${{ secrets.EXPO_PUBLIC_SUPABASE_URL || 'https://your-project.supabase.co' }}
           EXPO_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.EXPO_PUBLIC_SUPABASE_ANON_KEY || 'your-anon-key' }}
 
-      - name: Add 404.html for SPA routing
-        run: cp dist/index.html dist/404.html
+      - name: Copy public assets and SPA fallback
+        run: |
+          cp public/index.html dist/index.html
+          cp public/manifest.json dist/manifest.json
+          cp dist/index.html dist/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
