@@ -9,8 +9,6 @@ import {
 import { Image } from "expo-image";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
-import Slider from "@react-native-community/slider";
-import * as Haptics from "expo-haptics";
 import { usePlayerStore } from "@/stores/playerStore";
 import { usePlayer } from "@/hooks/usePlayer";
 import { useLibraryStore } from "@/stores/libraryStore";
@@ -18,6 +16,9 @@ import { useAuthStore } from "@/stores/authStore";
 import { COLORS, PLACEHOLDER_ARTWORK, REPEAT_MODES } from "@/lib/constants";
 import { formatDuration } from "@/lib/helpers";
 import { GeometricPattern } from "@/components/ui/GeometricPattern";
+
+import Slider from "@/components/ui/Slider";
+import * as Haptics from "@/lib/haptics";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 const ARTWORK_SIZE = SCREEN_WIDTH - 80;

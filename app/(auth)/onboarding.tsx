@@ -2,7 +2,7 @@ import { useState } from "react";
 import { View, Text, TouchableOpacity, SafeAreaView, Dimensions } from "react-native";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import * as Haptics from "expo-haptics";
+import * as Haptics from "@/lib/haptics";
 import { CATEGORIES, COLORS } from "@/lib/constants";
 import { useAuthStore } from "@/stores/authStore";
 import { Button } from "@/components/ui/Button";

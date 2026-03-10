@@ -29,11 +29,20 @@
     },
     "web": {
       "favicon": "./assets/favicon.png",
-      "bundler": "metro"
+      "bundler": "metro",
+      "output": "single",
+      "name": "Sama",
+      "shortName": "Sama",
+      "description": "Halal music streaming - Nasheeds, Quran & Islamic audio",
+      "backgroundColor": "#0a0a0a",
+      "themeColor": "#10b981"
     },
     "plugins": [
       "expo-router",
       "expo-font"
-    ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }

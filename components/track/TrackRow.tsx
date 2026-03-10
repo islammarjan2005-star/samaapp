@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Image } from "expo-image";
 import { Ionicons } from "@expo/vector-icons";
-import * as Haptics from "expo-haptics";
+import * as Haptics from "@/lib/haptics";
 import { COLORS, PLACEHOLDER_ARTWORK } from "@/lib/constants";
 import { formatDuration } from "@/lib/helpers";
 import { Track, usePlayerStore } from "@/stores/playerStore";

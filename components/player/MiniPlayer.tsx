@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, Dimensions } from "react-native";
 import { Image } from "expo-image";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
-import * as Haptics from "expo-haptics";
+import * as Haptics from "@/lib/haptics";
 import { usePlayerStore } from "@/stores/playerStore";
 import { usePlayer } from "@/hooks/usePlayer";
 import { COLORS, PLACEHOLDER_ARTWORK } from "@/lib/constants";
